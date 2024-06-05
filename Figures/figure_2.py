@@ -13,13 +13,13 @@ from matplotlib.colors import ListedColormap
 from mpl_toolkits.basemap import Basemap
 
 # Load observational data
-obs_data_path = "47Obs_data.csv"
+obs_data_path = "Data/47Obs_data.csv"
 obs_data = pd.read_csv(obs_data_path)
 new_obs = obs_data.to_numpy()
 
 
 # Load station data
-file_path = "47stations.txt"
+file_path = "/Data/47stations.txt"
 stations = pd.read_csv(file_path, header=None, sep="\t", decimal=".")
 
 stations
