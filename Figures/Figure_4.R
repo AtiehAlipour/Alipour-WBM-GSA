@@ -17,7 +17,7 @@ graphics.off()
 
 # Load data
 
-load("/Users/f006nr6/Desktop/Projects/PCHES/WBM/codes/LHCSamples.Rda")
+load("/Output/LHCSamples.Rda")
 
 ##########################################################
 
