@@ -17,7 +17,7 @@ rm(list = ls())
 num_parameters<- 6
 
 # load required data
-load("/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/LHCSamples.Rda")
+load("/Output/LHCSamples.Rda")
 
 
 ##########################################################
