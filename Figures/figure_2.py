@@ -1,6 +1,6 @@
 """
 # Ploting  observatinal locations 
-# Change output and sttaion index files path accordingly
+# Change output and station index files path accordingly
 # Author: Atieh Alipour(atieh.alipour@dartmouth.edu)
 
 """
