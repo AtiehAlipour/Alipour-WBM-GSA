@@ -1,4 +1,5 @@
-# Plot the corr
+# Plot the boxplots
+# Change input and output file path 
 # Author: Atieh Alipour(atieh.alipour@dartmouth.edu)
 
 ##########################################################
@@ -25,7 +26,6 @@ end_date <- as.Date("2022/12/31")
 
 num_days <- as.numeric(end_date - start_date) + 1
 
-
 date_sequence <- seq(start_date, end_date, by = "day")
 
 
@@ -33,18 +33,18 @@ date_sequence <- seq(start_date, end_date, by = "day")
 
 # Collect the soil moisture observation
 
-load("/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/47Obs_data.Rda")
+load("/Data/47Obs_data.Rda")
 
-filecrop = "/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/47corn_obs_years.txt"
+filecrop = "/Data/47corn_obs_years.txt"
 corn = read.delim(filecrop, header = FALSE, sep = "\t", dec = ".")
 
 
-file = "/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/47stations_Saturation.txt"
+file = "/Data/47stations_Saturation.txt"
 saturation = read.delim(file, header = FALSE, sep = "\t", dec = ".")
 
 
 # load station index file
-load("/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/47Station_Index.Rda")
+load("/Data/47Station_Index.Rda")
 
 
 
@@ -77,7 +77,7 @@ SM_Corr <- array(NA, dim = c(47,Ens))
 
 for(i in 1:Ens) {
   print(i)
-  load(paste0("/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
   for(s in 1:dim(corn)[1]){ 
     # Create an empty array
     SM_Corr[s,i]<-cor(SM_Output[,s],SM_Obs_newS[s,],use="pairwise.complete.obs")}
@@ -97,7 +97,7 @@ SM_RMSE <- array(NA, dim = c(47,Ens))
 
 for(i in 1:Ens) {
   print(i)
-  load(paste0("/gpfs/group/kaf26/default/users/aqa6478/WBM/Codes/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
   for(s in 1:dim(corn)[1]){ 
     squared_diff <- (SM_Obs_newS[s,] - SM_Output[,s])^2
     SM_RMSE[s,i]<-  mean(squared_diff, na.rm = TRUE) 
@@ -113,7 +113,7 @@ for(i in 1:Ens) {
 SM_Default<- array(NA, dim =c(num_days,47))
 
 # output folder path
-Folderpath <- paste0("/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/wbm_output/daily/")
+Folderpath <- paste0("/Analyses/SM_Main/wbm_output/daily/")
 
 d<-1
 dd<-1
