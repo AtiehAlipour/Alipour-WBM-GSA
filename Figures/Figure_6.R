@@ -77,7 +77,7 @@ SM_Corr <- array(NA, dim = c(47,Ens))
 
 for(i in 1:Ens) {
   print(i)
-  load(paste0("/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Output/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
   for(s in 1:dim(corn)[1]){ 
     # Create an empty array
     SM_Corr[s,i]<-cor(SM_Output[,s],SM_Obs_newS[s,],use="pairwise.complete.obs")}
@@ -97,7 +97,7 @@ SM_RMSE <- array(NA, dim = c(47,Ens))
 
 for(i in 1:Ens) {
   print(i)
-  load(paste0("/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Output/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
   for(s in 1:dim(corn)[1]){ 
     squared_diff <- (SM_Obs_newS[s,] - SM_Output[,s])^2
     SM_RMSE[s,i]<-  mean(squared_diff, na.rm = TRUE) 
