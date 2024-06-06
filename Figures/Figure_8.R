@@ -1,4 +1,4 @@
-# plot the daily, weekly, monthly, and seasonal performance
+# plot the Coefficient of Variation
 # Author: Atieh Alipour(atieh.alipour@dartmouth.edu)
 
 ##########################################################
@@ -23,7 +23,7 @@ rm(list = ls())
 # List of file names (adjust these according to your file names)
 file_folder <- c("AV_SM_Summer_Stations", "AV_SM_Fall_Stations", "AV_SM_GS_Stations", "AV_SM_Winter_Stations", "AV_SM_Spring_Stations","AV_SM_Stations", "D_Above_AV_SM_GS_Stations", "D_Above_AV_SM_Stations")
 
-file_path_full <- paste0("/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/SA/",file_folder,"/data/model_output.txt")
+file_path_full <- paste0("/Output/SA/",file_folder,"/data/model_output.txt")
 
 # Titles
 names <- c( "Mean SM-Summer", "Mean SM-Fall","Mean SM-Growing Season" , "Min SM-Winter" ,"Mean SM-Spring","Mean SM", "Days Above Mean SM-Growing Season","Days Above-Mean SM")
