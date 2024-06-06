@@ -33,18 +33,18 @@ date_sequence <- seq(start_date, end_date, by = "day")
 
 # Collect the soil moisture observation
 
-load("/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/47Obs_data.Rda")
+load("/Data/47Obs_data.Rda")
 
-filecrop = "/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/47corn_obs_years.txt"
+filecrop = "/Data/47corn_obs_years.txt"
 corn = read.delim(filecrop, header = FALSE, sep = "\t", dec = ".")
 
 
-file = "/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/47stations_Saturation.txt"
+file = "/Data/47stations_Saturation.txt"
 saturation = read.delim(file, header = FALSE, sep = "\t", dec = ".")
 
 
 # load station index file
-load("/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/47Station_Index.Rda")
+load("/Data/47Station_Index.Rda")
 
 
 ##########################################################
@@ -92,7 +92,7 @@ all_SM_Output <- array(NA, dim = c(12,Ens))
 
 for(i in 1:Ens) {
   print(i)
-  load(paste0("/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/Output_corn_1/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Output/47_stations/",i,"_","47_stations_time_series_soilMoistFrac.Rda"))
   for(s in 1:dim(corn)[1]){ 
     indices <- which(is.na(SM_Obs_newS[s,]))
     SM_Output[indices,s] <- NA}
@@ -145,7 +145,7 @@ seasonal_corr <- array(NA, dim = c(47,Ens))
 
 for(e in 1:Ens){
   print(e)
-  load(paste0("/storage/group/pches/default/users/aqa6478/aqa6478/WBM/Codes/Data/Output_corn_1/47_stations/",e,"_","47_stations_time_series_soilMoistFrac.Rda"))
+  load(paste0("/Output/47_stations/",e,"_","47_stations_time_series_soilMoistFrac.Rda"))
   
   for (i in 1:47){
     
