@@ -33,3 +33,4 @@ If you use the code or data from this repository in your work, please cite the c
 
 ## License
 
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/AtiehAlipour/Alipour-WBM-GSA/blob/main/LICENSE) file for details.
