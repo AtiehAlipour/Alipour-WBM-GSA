@@ -7,6 +7,6 @@
 cd /gpfs/group/kaf26/default/users/aqa6478/WBM/Corn_1
 
 # Submit 5000 job files
-for ((job=3800; job<=3850; job++)); do
+for ((job=1; job<=5000; job++)); do
     qsub ./$job/run_norun.pbs
 done
