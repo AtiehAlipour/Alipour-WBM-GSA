@@ -1,5 +1,5 @@
 # Sampling different parameters using LHS
-# Change the directory of AWC
+# Change the directories accordingly
 # Author: Atieh Alipour(atieh.alipour@dartmouth.edu)
 
 ##########################################################
