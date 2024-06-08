@@ -12,7 +12,7 @@ rm(list = ls())
 # List of file names (adjust these according to your file names)
 file_folder <- c("AV_SM_Stations", "AV_SM_GS_Stations", "D_Above_AV_SM_Stations", "D_Above_AV_SM_GS_Stations", "AV_SM_Spring_Stations", "AV_SM_Summer_Stations", "AV_SM_Fall_Stations", "AV_SM_Winter_Stations")
 
-file_path_full <- paste0("/Users/f006nr6/Desktop/SA/",file_folder,"/s1_matrix.txt")
+file_path_full <- paste0("/Analyses/SA/",file_folder,"/s1_matrix.txt")
 
 # Titles
 names <- c("AV_SM", "AV_SM_GS", "D_Above_AV_SM", "D_Above_AV_SM_GS", "AV_SM_Spring", "AV_SM_Summer", "AV_SM_Fall", "AV_SM_Winter")
