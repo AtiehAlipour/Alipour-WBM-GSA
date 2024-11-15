@@ -65,6 +65,39 @@ cbar.ax.tick_params(labelsize=18)
 cbar.set_ticks(custom_breaks)
 cbar.set_ticklabels([str(x) for x in custom_breaks])
 
+# Define the longitude and latitude tick values (these are in degrees)
+long_ticks = [-125, -115, -105, -95, -85, -75, -65]
+lat_ticks = [25, 30, 35, 40, 45, 50]
+
+# Format the tick labels to include degree symbols and cardinal directions (N/S/E/W)
+def format_latitude(lat):
+    """Returns formatted latitude with N/S direction."""
+    if lat >= 0:
+        return f"{abs(lat)}°N"
+    else:
+        return f"{abs(lat)}°S"
+
+def format_longitude(lon):
+    """Returns formatted longitude with E/W direction."""
+    if lon >= 0:
+        return f"{abs(lon)}°E"
+    else:
+        return f"{abs(lon)}°W"
+
+# Set the x-ticks and y-ticks using the Basemap conversion function (m(long, lat))
+ax.set_xticks(m(long_ticks, [25]*len(long_ticks))[0])  # convert longitudes
+ax.set_yticks(m([long_ticks[0]]*len(lat_ticks), lat_ticks)[1])  # convert latitudes
+
+# Set the tick labels to the actual geographical coordinates (lat/lon) with degree symbol and directions
+ax.set_xticklabels([format_longitude(lon) for lon in long_ticks], fontsize=18)  # Longitude labels
+ax.set_yticklabels([format_latitude(lat) for lat in lat_ticks], fontsize=18)   # Latitude labels
+
+# Use Basemap's `drawparallels` and `drawmeridians` to automatically draw grid lines with lat/lon labels
+# Adjusting fontsize for the grid lines labels
+#m.drawparallels(lat_ticks, labels=[1, 0, 0, 0], fontsize=18)  # Draw latitude lines (parallels) with larger font size
+#m.drawmeridians(long_ticks, labels=[0, 0, 0, 1], fontsize=18)  # Draw longitude lines (meridians) with larger font size
+
+
 # Save the plot as PNG
 plt.savefig("Figure2.png", dpi=300, bbox_inches='tight')
 plt.show()
