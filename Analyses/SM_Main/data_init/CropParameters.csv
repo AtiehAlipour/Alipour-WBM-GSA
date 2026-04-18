@@ -1,0 +1,3 @@
+Land_ID,Group,Priority,L_ini,L_dev,L_mid,L_late,Kci,Kcm,Kce,RootDepth,CropDepletionFactor,LandFracTS,LandFracTS_Dom,Kc_TS,AddedWaterTS,CropFracFile,PlantDayFile,SeasonLengthFile
+Maize_1,Rainfed,1,0.17,0.28,0.33,0.22,0.3,1.2,0.4,1600,0,/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data_init/MC_crop1.init,MC_crop1,/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data_init/MC_maize_1_rfd_Kc.init,,,,
+Fallow,Fallow,3,,,,,,,,,,/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data_init/MC_fallow_fr.init,fallow_fr,,,,,

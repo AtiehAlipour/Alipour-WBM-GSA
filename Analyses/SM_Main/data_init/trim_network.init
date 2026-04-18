@@ -1,0 +1,15 @@
+#
+# Trim nodata of a network file
+#
+
+{
+  Net_file	=> '/net/home/cv/alexp/perl/wbm/wbm_dev/test/Network5.asc',
+
+  subset	=> {
+	output_file	=> '/net/home/cv/alexp/perl/wbm/wbm_dev/test/Network6.asc',
+	trim_nodata	=> 1,
+	rectangle	=> {	lonMin => -180, lonMax => 180,
+				latMin =>  -90, latMax =>  90
+	}
+  }
+}

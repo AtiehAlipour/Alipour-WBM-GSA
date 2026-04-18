@@ -1,0 +1,17 @@
+{
+Code_Name	=> 'MC_maize_1_rfd_Kc',
+Name	=> 'CDL-US-Mv2 - CDL/MIRCA aggregation',
+Time_Series     => 'daily_clim',
+Start_Date      => '0000-01-01',
+End_Date        => '0000-12-31',
+Var_Name	=> 'MC_maize_1_rfd_Kc',
+Units	=> 'unitless',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'unitless',
+Bands   => 366,
+Processing	=> '',
+Projection	=> 'epsg:4326',
+File_Path	=> '/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data/KC/MC_maize_1_rfd_Kc.nc',
+Comment => 'Aggregation of crop properties from the MIRCA2000 data set with annual crop extent estimates from the CroplandDataLayer.'
+}

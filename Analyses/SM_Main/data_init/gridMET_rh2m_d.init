@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'gridMET_rh2m_d',
+Time_Series	=> 'daily',
+Start_Date	=> '2007-01-01',
+End_Date	=> '2022-12-31',
+Name		=> 'rh2m',
+Var_Name	=> 'rh2m',
+Units		=> 'percent',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'percent',
+Bands		=> 1,
+Processing	=> 'nodata=-9999',
+Projection	=> 'epsg:4326',
+File_Path	=> '(1e20,1e5):/gpfs/group/kaf26/default/private/WBM_data/Metdata_2008_2022/rh__YEAR_.nc;'
+}

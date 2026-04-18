@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'merra2_cldtot_d',
+Time_Series	=> 'daily',
+Start_Date	=> '2007-01-01',
+End_Date	=> '2022-12-31',
+Name		=> 'total_cloud_area_fraction',
+Var_Name	=> 'CLDTOT_daily',
+Units		=> 'fraction',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'fraction',
+Bands		=> 1,
+Processing	=> 'nodata=999999986991104',
+Projection	=> 'epsg:4326',
+File_Path	=> '(1e20,1e5):/gpfs/group/kaf26/default/private/WBM_data/Merra2_2008_2022/Radiation_Diagnostics/MERRA2_tavg1_2d_rad_Nx._YEAR__MONTH__DAY_.SUB.nc;'
+}

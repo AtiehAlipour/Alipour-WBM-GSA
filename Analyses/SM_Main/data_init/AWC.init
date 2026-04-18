@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'AWC',
+Time_Series	=> '',
+Start_Date	=> '',
+End_Date	=> '',
+Name		=> 'SSURGO_SoilData_awc_frac_mm_m_CONUS_1km',
+Var_Name	=> 'Band 1',
+Units		=> 'mm/m',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'mm/m',
+Bands		=> 1,
+Processing	=> 'nodata=-9999',
+Projection	=> 'epsg:4326',
+File_Path	=> '/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data/soil/SSURGO_SoilData_awc_frac_mm_m_CONUS_1km.tif'
+}

@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'mirca_cropAreaFraction',
+Time_Series	=> '',
+Start_Date	=> '2000-00-00',
+End_Date	=> '',
+Name		=> 'MIRCA2000 crop area as fraction of cell area',
+Var_Name	=> 'crop_area',
+Units		=> 'fraction',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'fraction',
+Bands		=> 1,
+Processing	=> '',
+Projection	=> 'epsg:4326',
+File_Path	=> '(1e20,1e5):/gpfs/group/kaf26/default/private/WBM_data/squam.sr.unh.edu/US_CDL_v3_data/crops/MIRCA_crop_frac/crop_area_fraction.nc;'
+}

@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'MC_fallow_fr',
+Time_Series	=> 'daily_clim',
+Start_Date	=> '0000-01-01',
+End_Date	=> '0000-12-31',
+Name		=> 'Rainfed Maize',
+Var_Name	=> 'Band1',
+Units		=> 'fraction',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'fraction',
+Bands		=> 366,
+Processing	=> '',
+Projection	=> 'epsg:4326',
+File_Path	=> '/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data/extent/crop0_extent.nc'
+}

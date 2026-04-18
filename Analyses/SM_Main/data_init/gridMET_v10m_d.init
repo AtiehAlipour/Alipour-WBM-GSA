@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'gridMET_v10m_d',
+Time_Series	=> 'daily',
+Start_Date	=> '2007-01-01',
+End_Date	=> '2022-12-31',
+Name		=> 'Daily Mean Wind Speed (10m)',
+Var_Name	=> 'wind_speed',
+Units		=> 'm/sec',
+Var_Scale	=> 1,
+Var_Offset	=> 0,
+Orig_Units	=> 'm/sec',
+Bands		=> 1,
+Processing	=> 'nodata=32767',
+Projection	=> 'epsg:4326',
+File_Path	=> '/gpfs/group/kaf26/default/private/WBM_data/Metdata_2008_2022/vw__YEAR_.nc;'
+}

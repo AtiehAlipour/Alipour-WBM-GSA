@@ -1,0 +1,16 @@
+{
+Code_Name	=> 'rootdepth',
+Time_Series	=> '',
+Start_Date	=> '',
+End_Date	=> '',
+Name		=> 'Effective_Rooting_Depth',
+Var_Name	=> 'Band 1',
+Units		=> 'mm',
+Var_Scale	=> 1000,
+Var_Offset	=> 0,
+Orig_Units	=> 'm',
+Bands		=> 1,
+Processing	=> 'NoData=3.4e+38',
+Projection	=> 'epsg:4326',
+File_Path	=> '/gpfs/group/kaf26/default/users/aqa6478/WBM/SM_Main/data/soil/Effective_Rooting_Depth.tif'
+}
