@@ -33,18 +33,18 @@ date_sequence <- seq(start_date, end_date, by = "day")
 
 # Collect the soil moisture observation
 
-load("/Data/47Obs_data.Rda")
+load("./Data/47Obs_data.Rda")
 
-filecrop = "/Data/47corn_obs_years.txt"
+filecrop = "./Data/47corn_obs_years.txt"
 corn = read.delim(filecrop, header = FALSE, sep = "\t", dec = ".")
 
 
-file = "/Data/47stations_Saturation.txt"
+file = "./Data/47stations_Saturation.txt"
 saturation = read.delim(file, header = FALSE, sep = "\t", dec = ".")
 
 
 # load station index file
-load("/Data/47Station_Index.Rda")
+load("./Data/47Station_Index.Rda")
 
 
 
@@ -61,7 +61,9 @@ for (s in 1:dim(corn)[1]){
   if(saturation[s,]>max(SM_Obs[s,], na.rm=TRUE)){
     SM_Obs_newS[s,1:num_days]<-(SM_Obs[s,1:num_days]-min(SM_Obs[s,], na.rm=TRUE))/(saturation[s,]-min(SM_Obs[s,], na.rm=TRUE))
   }else{
-    SM_Obs_newS[s,1:num_days]<-(SM_Obs[s,1:num_days]-min(SM_Obs[s,], na.rm=TRUE))/(max(SM_Obs[s,], na.rm=TRUE)-min(SM_Obs[s,], na.rm=TRUE))}}
+    SM_Obs_newS[s,1:num_days]<-(SM_Obs[s,1:num_days]-min(SM_Obs[s,], na.rm=TRUE))/(max(SM_Obs[s,], na.rm=TRUE)-min(SM_Obs[s,], na.rm=TRUE))
+  }
+}
 
 
 

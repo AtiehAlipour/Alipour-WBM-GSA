@@ -17,7 +17,7 @@ rm(list = ls())
 num_parameters<- 6
 
 # load required data
-load("/Output/LHCSamples.Rda")
+load("./Output/LHCSamples.Rda")
 
 
 ##########################################################

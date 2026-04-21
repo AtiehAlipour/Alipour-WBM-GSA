@@ -1,0 +1,26 @@
+<PAMDataset>
+  <Subdataset name="active_cell_area">
+    <PAMDataset>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="STATISTICS_MAXIMUM">18.61256980896</MDI>
+          <MDI key="STATISTICS_MEAN">16.87125813961</MDI>
+          <MDI key="STATISTICS_MINIMUM">14.302042961121</MDI>
+          <MDI key="STATISTICS_STDDEV">0.88753705091673</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="soil_cell_area">
+    <PAMDataset>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="STATISTICS_MAXIMUM">18.61256980896</MDI>
+          <MDI key="STATISTICS_MEAN">16.87125813961</MDI>
+          <MDI key="STATISTICS_MINIMUM">14.302042961121</MDI>
+          <MDI key="STATISTICS_STDDEV">0.88753705091673</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+</PAMDataset>
